@@ -98,7 +98,6 @@ class ViewController: UIViewController {
     
     
     @objc func handleButton(button: UIButton) {
-        print(button.currentTitle)
         
         let userAnswer = button.currentTitle! //True, False
         let userGotItRight = quizBrain.checkAnswer(userAnswer)
@@ -127,7 +126,7 @@ class ViewController: UIViewController {
 
     @objc func updateUI() {
         questionLabel.text = quizBrain.getQuestionText()
-        progressBar.progress = quizBrain.getProgress()
+        progressBar.setProgress(quizBrain.getProgress(), animated: true)
         scoreLabel.text = "Score: \(quizBrain.getScore())"
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
