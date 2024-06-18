@@ -103,24 +103,18 @@ class ViewController: UIViewController {
         let userGotItRight = quizBrain.checkAnswer(userAnswer)
         
         
-        if userGotItRight
-        {
+        if userGotItRight {
             print("Right!")
             button.backgroundColor = UIColor.green
         }
-        else
-        {
+        else {
             print("Wrong!")
             button.backgroundColor = UIColor.red
         }
-        
-       
-        
+
         quizBrain.nextQuestion()
         
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
-        
-        
     }
     
 

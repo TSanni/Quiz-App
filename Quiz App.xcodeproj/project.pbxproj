@@ -60,14 +60,22 @@
 			children = (
 				83F44AED2C21A7BC0067FE82 /* AppDelegate.swift */,
 				83F44AEF2C21A7BC0067FE82 /* SceneDelegate.swift */,
-				83F44AF12C21A7BC0067FE82 /* ViewController.swift */,
-				83F44B032C21CEAD0067FE82 /* QuizBrain.swift */,
-				83F44B052C21CEDB0067FE82 /* Question.swift */,
 				83F44AF82C21A7BC0067FE82 /* LaunchScreen.storyboard */,
+				83F44B072C21D9540067FE82 /* Model */,
+				83F44AF12C21A7BC0067FE82 /* ViewController.swift */,
 				83F44AFB2C21A7BC0067FE82 /* Info.plist */,
 				83F44B012C21A8D90067FE82 /* Assets.xcassets */,
 			);
 			path = "Quiz App";
+			sourceTree = "<group>";
+		};
+		83F44B072C21D9540067FE82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83F44B032C21CEAD0067FE82 /* QuizBrain.swift */,
+				83F44B052C21CEDB0067FE82 /* Question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
